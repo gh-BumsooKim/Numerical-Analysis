@@ -65,3 +65,26 @@ x_old = x_new;
   <img src="roots of equations/fixed_point_iteration.png" width=48%>
   <img src="roots of equations/fixed_point_iteration_error.png" width=48%>
 </p>
+
+## Gauss Elimination
+
+Linear Equation File Usage
+
+```
+Ax = b
+
+1*x1  + 0*x2 + 2*x3 + 3*x4 =  1
+-1*x1 + 2*x2 + 2*x3 - 3*x4 = -1
+0*x1  + 1*x2 + 1*x3 + 4*x4 =  2
+6*x1  + 2*x2 + 2*x3 + 4*x4 =  1
+
+
+-> file_format(.txt) ->
+
+
+1  0 2  3
+-1 2 2 -3
+0  1 1  4
+6  2 2  4
+1 -1 2  1
+```
