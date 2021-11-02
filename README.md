@@ -46,6 +46,12 @@ end
 x_new = funcG(x_old);
 x_old = x_new;
 
+
+% 4. Secant Method
+x_i3 = x_i2 - func(x_i2) * (x_i2 - x_i1) / (func(x_i2) - func(x_i1))
+
+% 5. Modifed Secant Methods | e.g. delta = 10^-6
+x_i3 = x_i2 - func(x_i2) * delta * x_i2 / (func(x_i2 * (1 + delta)) - func(x_i2))
 ```
 
 <p align="center">
@@ -64,6 +70,12 @@ x_old = x_new;
   [Fixed-Point Iteration (Open Methods)] <br>
   <img src="roots of equations/fixed_point_iteration.png" width=48%>
   <img src="roots of equations/fixed_point_iteration_error.png" width=48%>
+</p>
+
+<p align="center">
+  [Secant Method / Modified Secant Method (Open Methods)] <br>
+  <img src="roots of equations/secant_method.png" width=48%>
+  <img src="roots of equations/modified_secant_method.png" width=48%>
 </p>
 
 ## Gauss Elimination
